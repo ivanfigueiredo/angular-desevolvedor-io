@@ -1,0 +1,39 @@
+<div class="container main-container">
+  <h4>Cadastro</h4>
+  <hr />
+  <form novalidate (ngSubmit)="adicionarUsuario()" [formGroup]="cadastroForm">
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <span class="input-group-text" for="nome" id="basic">Nome Completo</span>
+          <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)" aria-describedby="basic" formControlName="nome"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic">Email</span>
+          <input class="form-control" type="text" placeholder="Email (requerido)" aria-describedby="basic" formControlName="email"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic">Senha</span>
+          <input class="form-control" type="text" placeholder="Senha (requerido)" aria-describedby="basic" formControlName="senha"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic">Confirmar Senha</span>
+          <input class="form-control" type="text" placeholder="Confirmar Senha (requerido)" aria-describedby="basic" formControlName="confirmarSenha"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-4 mt-3 col-md-offset-2">
+          <span><button class="btn btn-primary" id="Register" type="submit">Enviar</button></span>
+        </div>
+      </div>
+  </form>
+</div>

@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { MenuComponent } from './navegacao/menu/menu.component';
-import { HomeComponent } from './navegacao/home/home.component';
-import { FooterComponent } from './navegacao/footer/footer.component';
-import { SobreComponent } from './institucional/sobre/sobre.component';
-import { ContatoComponent } from './institucional/contato/contato.component';
+import { MenuComponent } from './controller/navegacao/menu/menu.component';
+import { FooterComponent } from './controller/navegacao/footer/footer.component';
 
 @Component({
   selector: 'app-root',
