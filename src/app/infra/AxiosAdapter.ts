@@ -7,7 +7,6 @@ export class AxiosAdapter implements IAxios {
   private baseUrl = 'http://localhost:5555';
 
   async post<T, D>(url: string, body: D): Promise<T> {
-    console.log('=============>>> BODY', body);
     const output = await axios.post<T>(this.baseUrl + url, {
       body,
     });

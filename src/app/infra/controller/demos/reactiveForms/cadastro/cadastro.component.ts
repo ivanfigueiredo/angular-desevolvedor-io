@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ICreateUserInBound } from '../../../../../application/inbound/ICreateUserInBound';
 import { CreateUserUseCase } from '../../../../../application/CreateUserUseCase';

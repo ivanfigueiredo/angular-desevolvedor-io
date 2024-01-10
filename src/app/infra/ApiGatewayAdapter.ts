@@ -12,7 +12,6 @@ export class ApiGatewayAdapter implements IApiGatewayOutBound {
   ) {}
 
   async createUser(user: User): Promise<any> {
-    console.log('==================>>> USER', user);
     await this.axios.post('/create-user', user);
   }
 }
