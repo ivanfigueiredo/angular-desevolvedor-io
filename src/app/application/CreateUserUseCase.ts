@@ -11,11 +11,11 @@ import { ApiGatewayAdapter } from '../infra/ApiGatewayAdapter';
 export class CreateUserUseCase implements ICreateUserInBound {
   constructor(
     @Inject(ApiGatewayAdapter)
-    private readonly apiGatewayOutBound: IApiGatewayOutBound
+    private readonly apiGatewayOutBound: IApiGatewayOutBound,
   ) {}
 
   async execute(dto: CreateUserDto): Promise<void> {
-    const user = new User(dto.nome, dto.email, dto.senha, dto.confirmarSenha);
+    const user = new User(dto.nome, dto.cpf, dto.email, dto.senha, dto.confirmarSenha);
     await this.apiGatewayOutBound.createUser(user);
   }
 }
